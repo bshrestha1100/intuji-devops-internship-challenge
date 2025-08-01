@@ -138,3 +138,36 @@ services:
 ```
 
 
+4. Install Jenkins. Install necessary plugins. Create a freestyle project for building a CI/CD pipeline for the above application which will build artifacts using a docker file directly from your GitHub repo.
+- First I had created a script to install jenkins with Java version 11, but unfortunately jenkins didn't start. 
+- Removed all the files and tried installing new jenkins from terminal but still having the same issue. 
+- Then I tried installing Java version 17 and running but the issue remained. 
+- Then I tried **sudo su - jenkins** I entered the jenkins user account when I tried to exit jenkins started working and it gave password to login to jenkins from **localhost:8080**.
+- Then went to firefox browser and pasted the password and clicked continue.
+- Then I installed the suggested plugins.
+- Created a First Admin User.
+- Landed in the home page of jenkins.
+- Clicked on new items -> Entered the item name **intuji-devops-internship-challenge** -> selected freestyle project from project type.
+- In build steps I chose Execute Shell and typed docker build -t php-hello-world.
+- In Source Code Management I chose Git and paste the public repo link and clicked Save.
+- Then I clicked Build Now and it started building and few minutes later the build was complete.
+
+## install-jenkins.sh
+
+```bash
+# Update and install dependencies
+sudo apt update
+sudo apt install openjdk-11-jdk -y
+
+# Add Jenkins repo and key
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt update
+sudo apt install jenkins -y
+
+# Start Jenkins and enable at boot
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+
+```
