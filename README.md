@@ -61,3 +61,15 @@ docker --version && echo "Docker installed successfully!"
 
 ```
     
+
+## Internship Task Report
+
+2. Clone the GitHub repository
+(https://github.com/silarhi/php-hello-world.git).
+
+- To clone the given GitHub repo I copied the link and in the terminal I typed **git clone** and then paste the link and press enter.
+- It started cloning the repo to my local directory.
+- I then added the cloned repo file to my GitHub repo name **intuji-devops-internship-challenge**.
+- And also created personal access token to use during git push origin.
+- I also encountered an issue when push the cloned content to my repo. So I had to use rebase and then I could push to my repo.
+
