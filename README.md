@@ -112,3 +112,26 @@ RUN composer install
 CMD ["vendor/bin/phpunit", "--testdox"]
 
 ```
+
+3. Create a docker-compose file for an application.
+- Created a new file named **docker-compose.yml**.
+- And build it using the command **docker-compose up --build**
+
+## docker-composer.yml
+
+```bash
+version: '3.8'
+
+services:
+  php-app:
+    build: .
+    container_name: php-hello-test
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: vendor/bin/phpunit --testdox
+
+
+```
+
+
