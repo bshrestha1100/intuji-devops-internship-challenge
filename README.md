@@ -8,6 +8,9 @@ This is a step-by-step documentation on how I completed this task.
 For VM I used UTM with Ubuntu installed.
 
 - Opened terminal first then created a created a new directory named **intuji-devops-internship-challenge**.
+
+ <img width="1385" height="197" alt="1 1" src="https://github.com/user-attachments/assets/ccbf11ca-9b2a-4dd0-8eee-76d181a5ccdb" />
+
 - Then entered the directory and created a new file called **install-docker.sh** and wrote a bash script to install the docker.
  - Then gave permission to make it executable. 
  - And then run the command to start installing.
