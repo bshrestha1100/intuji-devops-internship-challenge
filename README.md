@@ -185,6 +185,8 @@ services:
 - Then I tried installing Java version 17 and running but the issue remained.
   <img width="1406" height="768" alt="4 7" src="https://github.com/user-attachments/assets/933e53cb-e241-4063-8176-e026bff0ba0d" />
   <img width="1037" height="532" alt="4 8" src="https://github.com/user-attachments/assets/de63a79b-5b42-4f8c-bf85-18aa4bb66305" />
+  <img width="200" height="197" alt="image" src="https://github.com/user-attachments/assets/12249f72-92d0-4338-a6a8-bb2f9c2722ff" />
+
 
  
 - Then I tried **sudo su - jenkins** I entered the jenkins user account when I tried to exit jenkins started working and it gave password to login to jenkins from **localhost:8080**.
@@ -239,3 +241,8 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
 ```
+
+
+## After the build was success *le me
+<img width="229" height="374" alt="image" src="https://github.com/user-attachments/assets/4df4fd82-6d6f-41e7-990c-15efd70cd21a" />
+
